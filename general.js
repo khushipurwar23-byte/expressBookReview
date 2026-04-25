@@ -63,6 +63,16 @@ async function getBooksByTitle(title) {
         console.error("Error:", err.response?.data || err.message);
     }
 }
+// Fetch all books from API
+async function getAllBooks() {
+    try {
+        const res = await axios.get(`${BASE_URL}/books`);
+        console.log("Fetched all books successfully");
+        console.log(res.data);
+    } catch (err) {
+        console.error("Error fetching books:", err.response?.data || err.message);
+    }
+}
 
 // 🔥 Run all
 (async () => {
