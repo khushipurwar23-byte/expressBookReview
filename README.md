@@ -5,3 +5,4 @@ Features:
 - Get all books
 - Search by ISBN, author, title
 - Add/modify/delete reviews
+Fixed typo in README

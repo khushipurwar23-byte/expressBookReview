@@ -1,0 +1,25 @@
+{
+  "name": "expressbookreview",
+  "version": "1.0.0",
+  "description": "This project is a Node.js application for managing book reviews.\r Features:\r - Get all books\r - Search by ISBN, author, title\r - Add/modify/delete reviews\r Fixed typo in README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushipurwar23-byte/expressBookReview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khushipurwar23-byte/expressBookReview/issues"
+  },
+  "homepage": "https://github.com/khushipurwar23-byte/expressBookReview#readme",
+  "dependencies": {
+    "axios": "^1.15.2",
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  }
+}
