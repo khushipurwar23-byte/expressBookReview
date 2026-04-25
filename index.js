@@ -63,9 +63,15 @@ app.put('/books/review/:isbn', (req, res) => {
 });
 
 // Task 10 - Delete review
-app.delete('/books/review/:isbn/:user', (req, res) => {
-    delete books[req.params.isbn].reviews[req.params.user];
-    res.send("Review deleted");
+app.delete("/books/review", (req, res) => {
+    const { isbn, user } = req.body;
+
+    if (books[isbn] && books[isbn].reviews[user]) {
+        delete books[isbn].reviews[user];
+        return res.json({ message: "Review deleted successfully" });
+    }
+
+    return res.status(404).json({ message: "Review not found" });
 });
 
 // Task 11 - Axios async example
